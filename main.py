@@ -28,12 +28,12 @@ ipflood = ""
 def ask():
   choice = input("[*] ")
 if choice == "ping":
-    os.system("cd tools && python p.py")
+    os.system("python p.py")
     ask()
 elif choice == "ipflood":
      os.system("d.py")
 elif choice == "nmap":
-	os.system("cd tools && python n.py")
+	os.system("python n.py")
 	ask()	
 elif choice == "help":
 	print ("""
@@ -65,13 +65,13 @@ elif choice == "install":
 		os.system("sudo reboot")
 		ask()
 elif choice == "iplookup":
-	os.system("cd tools && bash ii.sh")
+	os.system("bash ii.sh")
 	ask()
 elif choice == "macflood":
-	os.system("cd tools && python mf.py")
+	os.system("python mf.py")
 	ask()
 elif choice == "ncat":
-	os.system("cd tools && python nc.py")
+	os.system("python nc.py")
 	ask()
 elif choice == "clear":
 	if os.name=="nt":
