@@ -5,8 +5,14 @@
 OSIPKit Is A IP Osint Kit For Penetratiom Testing
 # Themes
 ```
+Standard
 Swiss Army Knife
-Drop The Blood
+Drop The Blood Pyramid
+Anonymous
+Horizon
+CryEyes
+Matrix
+Hack The World
 ```
 # Tools
 ```
@@ -16,7 +22,6 @@ Saphyra DDoS
 MAC Flooder
 IP Lookup
 SSH
-IP Generating -- Coming Soon
 Grabify Track Links Generator
 ```
 # Installation
