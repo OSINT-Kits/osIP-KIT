@@ -14,6 +14,7 @@ from colorama import Fore, Style
 print (Style.BRIGHT + Fore.GREEN +"                 W E L - C O M E ")
 time.sleep(0.5)
 print (figlet_format("osIP-Kit", font = "slant"))
+time.sleep(0.5)
 print ("==================================")
 print ("Made By Ahmad")
 print ("Replit: @AhmadTheWeirdo")
@@ -46,9 +47,23 @@ elif choice == "help":
 	ncat -- makes a reverse shell script
 	install -- installs all the requirements
 	credits -- prints who made the script
+	req -- installs python requirements
+	ssh -- sshs into a ip address
+	gen -- generates ip addresses and checks them
+	geng -- generates grabify links and checks them
 	---------------------------------------------------------
 	""")
 	ask()
+elif choice == "gen":
+	print ("Coming Soon...")
+	ask()
+elif choice == "geng":
+	print ("Coming Soon...")
+	ask()
+elif choice == "ssh":
+	os.system("python ss.py")
+elif choice == "req":
+	os.system("sudo pip3 install scapy pyfiglet colorama pyfiglet requests")
 elif choice == "credits":
 	print ("""
 	Made By Ahmad
@@ -58,7 +73,8 @@ elif choice == "credits":
 elif choice == "install":
 	print ("[*] Installing...")
 	done = False
-	os.system("sudo apt-get nmap netcat && sudo pip3 install scapy")
+	os.system("sudo apt-get nmap netcat")
+	ask()
 	ask()
 	if done == True:
 		print ("[*] Restarting Device...")
@@ -80,3 +96,7 @@ elif choice == "clear":
 	else:
 		os.system("clear")
 		ask()
+else:
+	while choice==0:
+		if choice==["clear","ncat","macflood","iplookup","install","gen","geng","credits","req","ssh","ipflood"]:
+			break
