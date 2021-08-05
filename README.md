@@ -6,12 +6,15 @@ NetCat
 DDoS Tool
 MAC Flooder
 IP Lookup
+SSH
+IP Generating -- Coming Soon
+Grabify Track Links Generator -- Coming Soon
 # Installation
 To Install:
 ```
 git clone https://github.com/OSINT-Kits/osIP-KIT
 cd osIP-KIT
-python main.py
+sudo python main.py
 ```
 # Credits
 Made By OSINT-Kits
