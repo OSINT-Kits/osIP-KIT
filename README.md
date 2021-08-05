@@ -21,4 +21,6 @@ cd osIP-KIT
 sudo python main.py
 ```
 # Credits
-Made By OSINT-Kits
+Made By OSINT-Kits/Liquid Developers
+Ahmad.#9474
+
