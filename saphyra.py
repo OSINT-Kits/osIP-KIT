@@ -25,7 +25,7 @@ DEFAULT_WORKERS=50
 DEFAULT_SOCKETS=4000
 
 
-with open('lists/useragents.txt') as f:
+with open('useragents.txt') as f:
     USER_AGENT_PARTS = f.readlines()
 
 class Saphyra(object):
