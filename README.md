@@ -1,4 +1,3 @@
-# Showcase
 ![a](https://github.com/OSINT-Kits/osIP-KIT/blob/main/1628093195647.png?raw=true)
 # osIP-KIT
 [![license](https://img.shields.io/badge/license-GPL-brightgreen.svg)](https://github.com/malwaredllc/byob/blob/master/LICENSE)
