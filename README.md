@@ -1,6 +1,9 @@
 # Showcase
 ![a](https://github.com/OSINT-Kits/osIP-KIT/blob/main/1628093195647.png?raw=true)
 # osIP-KIT
+[![license](https://img.shields.io/badge/license-GPL-brightgreen.svg)](https://github.com/malwaredllc/byob/blob/master/LICENSE)
+[![version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com/malwaredllc/byob)
+![build](https://github.com/malwaredllc/byob/workflows/build/badge.svg)
 OSIPKit Is A IP Osint Kit For Penetratiom Testing
 # Tools
 ```
