@@ -18,6 +18,10 @@ Matrix
 Hack The World
 PlaneCrack
 PoliceOSIP
+Toxic DropTheBlood
+Kill The Nazi's
+Kill The KKK
+Kill The KKK 2
 ```
 # Tools
 ```
