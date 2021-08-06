@@ -3,6 +3,9 @@
 [![version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com/malwaredllc/byob)
 ![build](https://github.com/malwaredllc/byob/workflows/build/badge.svg)
 OSIPKit Is A IP Osint Kit For Penetratiom Testing
+# Update v3.0
+Added Themes And I Added Saphyra DDoS Tool Support And I Made The Grabify Track Code Generator
+And Added A DNS Spoofer. For Now This Project Is Done Until Further Notice.
 # Themes
 ```
 Standard
@@ -13,6 +16,8 @@ Horizon
 CryEyes
 Matrix
 Hack The World
+PlaneCrack
+PoliceOSIP
 ```
 # Tools
 ```
@@ -23,6 +28,7 @@ MAC Flooder
 IP Lookup
 SSH
 Grabify Track Links Generator
+DNS Spoofer
 ```
 # Installation
 To Install:
