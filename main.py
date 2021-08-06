@@ -1,12 +1,18 @@
 ############Made By Ahmad############$
 # IMPORTS
 import os
+# REQUIREMENT INSTALLER
+print ("Installing...")
+done = False
+os.system("sudo pip3 install whois requests colorama scapy")
+done = True
+if done == True:
+	print ("Welcome. Finished Updating!")
 import socket
 import threading
 import socket as s
 import sys
 import random
-import getpass
 import string
 import whois
 import json
@@ -15,7 +21,6 @@ from urllib.request import urlopen
 import time
 import requests
 from scapy.all import *
-from pyfiglet import figlet_format
 from colorama import Fore, Style
 # MENU
 os.system("clear")
@@ -24,20 +29,62 @@ print ("""
 
 (Zoom Out Completely For The Best CLI Experience)
 Please Choose A CLI Theme:
--1- Drop The Blood Pyramid
--2- Swiss Army Knife
--3- Standard Logo
--4- Horizon
--5- Matrix
--6- Hack The World
--7- Anonymous
--8- CryEyes
+ ---------------------------
+|        T H E M E S        |
+|-1- Drop The Blood Pyramid |
+|-2- Swiss Army Knife       |
+|-3- Standard Logo          |
+|-4- Horizon                |
+|-5- Matrix                 |
+|-6- Hack The World         |
+|-7- Anonymous              |
+|-8- CryEyes                |
+|-9- PlaneCrack             |
+|-10- PoliceOSIP            |
+|                           |
+|99- exit - 1- default theme|
+ ---------------------------
 """)
 mmenu = input ("[*] Choose Theme: ")
 os.system("clear")
 print (Style.BRIGHT + Fore.RED +"W E L - C O M E ")
 time.sleep(0.5)
 print ("======================================")
+menu10 = ("""
+                       _____________________
+    /  .       .      (<$$$$$$>#####<::::::>)
+   .      .     .  _/~~~~~~~~~~~~~~~~~~~~~~~~~\_   .       .   .   \
+.(          . .  /~                             ~\ . .   .
+  ( . .        .~                                 ~.      .         )
+           ()\/_____                           _____\/()   .    .  ).
+(         .-''      ~~~~~~~~~~~~~~~~~~~~~~~~~~~     ``-.  ...
+.  . . .-~              __________________              ~-.  .    /
+ .   ..`~~/~~~~~~~~~~~~TTTTTTTTTTTTTTTTTTTT~~~~~~~~~~~~\~~'    . ) .
+    . .| | | #### #### || | | | [] | | | || #### #### | | | .
+   (   ;__\|___________|++++++++++++++++++|___________|/__;.   .
+     .  (~~====___________________________________====~~~)
+ ( .  .. \------_____________[ OSIP1 ]__________-------/ ..  .     )
+         .  |      ||         ~~~~~~~~       ||      |
+             \_____/                          \_____/
+""")
+menu9 = ("""
+---------------------------------
+        [osIP-Framework]
+            ____
+  |        | ___\          /~~~|
+ _:_______|/'(..)`\_______/  | |
+<_|``````  \__~~__/  osIP ___|_|
+  :\_____(=========,(*),--\__|_/
+  |       \ Ahmad /---'
+           | (*) /
+           |____/
+            ``
+            ``
+           [==)
+
+        [Hack The World]
+---------------------------------
+""")
 menu8 = ("""
 
 
@@ -139,10 +186,13 @@ menu4 = ("""
  *             *         *
 *     *   *        *      
 the horizon
+*  *        *    *        * *   
+  *    * *          * * *
+*   *        *   *         *
 
-###hack the world ###### ########
+### hack the world ###### ########
 #################################
-#################################
+##########################################$#######################
 #################################
 ---------------------------------
 """)
@@ -216,6 +266,13 @@ if mmenu == "7":
 	print (menu7)
 if mmenu == "8":
 	print (menu8)
+if mmenu == "9":
+	print (menu9)
+if mmenu == "10":
+	print (menu10)
+if mmenu == "99":
+	print ("Goodbye")
+	exit()
 time.sleep(0.5)
 creditss = ("""######################################
 Made By Ahmad
@@ -241,10 +298,13 @@ if choice == "ping":
     os.system("ping "+ipp)
     ask()
 elif choice == "gen":
-	for i in range(500):
+	f= open("glinks.txt","w+")
+	while 1==1:
 		code = cxode(6)
-		print ("https://grabify.link/track/"+code)
-		ask()
+		url = ("https://grabify.link/track/"+code)
+		print ("[*] Generating...")
+		print ("[*] Whenever You Would Like Just Press CTRL+C Then Check The glinks.txt File!")
+		f.write(url)
 elif choice == "ipflood":
 	print ("[*] Please Note: Due To Anonymous Making The Saphyra Tool Ages Ago Its Made In Python 2 So Python 2 Is Required!, Forgot To Mention Saphyra Requires A Good Device Because It Sends A Attack Signal To 5k Useragents Which Makes The Device Lag!")
 	ipdos = input("[*] Input Target's IP Address:  ")
@@ -256,7 +316,7 @@ elif choice == "nmap":
 elif choice == "help":
 	print ("""
  -------------------------------
-|           H E L P             |
+|       H E L P - L I S T       |
 | ----------------------------- |
 | install - install the modules |
 | req - install the python reqs |
@@ -273,9 +333,13 @@ elif choice == "help":
 | clear - clears screen (unix)  |
 | gen - generates grabify codes |
 | credits - posts credits       |
+| fun - posts fun fact          |
+| dns - spoofs dns from a server|
  -------------------------------
 	""")
 	ask()
+elif choice == "dns":
+	os.system("sudo python spoof.py")
 elif choice == "request":
 	rserver = input("[*] Enter Server: ")
 	done = False
@@ -338,6 +402,14 @@ elif choice == "ncat":
 elif choice == "clear":
 	os.system("clear")
 	print (creditss)
+	ask()
+elif choice == "fun":
+	print ("""
+Fun Fact: 
+I Made This Script To Stop Some People From Calling Me 
+Harmless/Script Kiddie 
+Which I Spent More Than A Whole Week To Finish This Script
+With No Sleep""")
 	ask()
 else:
 	ask()
